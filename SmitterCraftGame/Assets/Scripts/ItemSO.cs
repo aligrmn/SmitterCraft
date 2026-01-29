@@ -8,6 +8,7 @@ public class ItemSO : ScriptableObject
     public Sprite sprite;
     public int itemValue;
     public int itemQuantity;
-    //public bool isCraftable;
+    public bool isDraggable = false;
+    public bool isCraftable = false;
 
 }

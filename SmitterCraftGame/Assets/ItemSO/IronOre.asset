@@ -16,4 +16,6 @@ MonoBehaviour:
   description: Simple Ore
   sprite: {fileID: 0}
   itemValue: 3
-  itemQuantity: 0
+  itemQuantity: 1
+  isDraggable: 0
+  isCraftable: 1
