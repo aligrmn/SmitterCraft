@@ -21,7 +21,6 @@ public class DraggingObjects : MonoBehaviour
         if (Mouse.current.leftButton.wasPressedThisFrame)
         {
             Vector3 mouseWorldPos = GetMouseWorldPosition();
-            
             // Check if we clicked on THIS object's collider
             RaycastHit2D hit = Physics2D.Raycast(mouseWorldPos, Vector2.zero);
             if (hit.collider != null && hit.transform == transform)
