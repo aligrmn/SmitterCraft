@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Draggable
   - HoldZone
+  - Hammer
   layers:
   - Default
   - TransparentFX

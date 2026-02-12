@@ -6,7 +6,8 @@ public class ItemSackLogic : MonoBehaviour
     public ItemSO IronOre;
     private Camera mainCamera;
     private bool isDragging;
-    public GameObject IronOreSprite;
+    public GameObject IronOrePrefab
+;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -31,7 +32,7 @@ public class ItemSackLogic : MonoBehaviour
                 {
                     // Create visual drag object
                     
-                    IronOreSprite.transform.position = mouseWorldPos;
+                    IronOrePrefab.transform.position = mouseWorldPos;
                         isDragging = true;
                         
                     }
@@ -41,7 +42,7 @@ public class ItemSackLogic : MonoBehaviour
         // Mouse Drag
         if (isDragging)
         {
-            IronOreSprite.transform.position = GetMouseWorldPosition();
+            IronOrePrefab.transform.position = GetMouseWorldPosition();
             IronOre.isCraftable = true;
         }
 
